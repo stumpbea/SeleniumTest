@@ -1,0 +1,180 @@
+{
+  "id": "d8c45390-788b-4f04-a861-2f38a388e3dc",
+  "version": "2.0",
+  "name": "Leo.org",
+  "url": "https://dict.leo.org/",
+  "tests": [{
+    "id": "fa3f28dd-7d60-4aa4-ac12-0d9c44f643f2",
+    "name": "Top Übersetzung für \"auto\"",
+    "commands": [{
+      "id": "40e91d10-6dda-44a0-8248-68938b60c319",
+      "comment": "",
+      "command": "open",
+      "target": "/german-english",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5fe21373-006f-43b1-a1cd-6a895778b50a",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["name=search", "name"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//div[@id='searchBar']/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa3a60fa-dcc1-4d7e-87ab-bed8ff5ea034",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["name=search", "name"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//div[@id='searchBar']/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Auto"
+    }, {
+      "id": "258fe8f1-8da0-4a32-b271-c7cea68bef91",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon_magnify:nth-child(1)",
+      "targets": [
+        ["css=.icon_magnify:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='searchFieldSubmit']/i", "xpath:idRelative"],
+        ["xpath=//button[3]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a389293-f71b-4863-a909-6241e534059d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#section-subst .is-clickable:nth-child(1) > .isRelinked:nth-child(5)",
+      "targets": [
+        ["css=#section-subst .is-clickable:nth-child(1) > .isRelinked:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='section-subst']/table/tbody/tr/td[5]", "xpath:idRelative"],
+        ["xpath=//td[5]", "xpath:position"],
+        ["xpath=//td[contains(.,'car')]", "xpath:innerText"]
+      ],
+      "value": "car"
+    }, {
+      "id": "0e4bdc52-0910-47c9-a9da-88a67c7621e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon_size_14:nth-child(1)",
+      "targets": [
+        ["css=.icon_size_14:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='searchBar']/form/div[2]/div/div/button/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec34a650-8cb1-4538-a258-69e6b0077641",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["name=search", "name"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//div[@id='searchBar']/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Auto"
+    }]
+  }, {
+    "id": "fe9c3a43-96b2-4396-a7cc-e2f03701b460",
+    "name": "Werbebanner",
+    "commands": [{
+      "id": "bc5bf1dd-bfad-4c1b-881b-50b2369f382f",
+      "comment": "",
+      "command": "open",
+      "target": "/german-english",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae209e1c-7c46-4429-b682-6f82383c9d88",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=adv-banner",
+      "targets": [
+        ["css=.productImage", "css:finder"],
+        ["xpath=//img[contains(@src,'https://s0.2mdn.net/ads/richmedia/studio/60003574/60003574_20240402234940496_16_kw_asus_vivobook_quer.png')]", "xpath:img"],
+        ["xpath=//div[@id='p1']/div[3]/img", "xpath:idRelative"],
+        ["xpath=//div[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54a17af5-2423-443b-ae59-252f199377ee",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#topBranding > .ta-l",
+      "targets": [
+        ["css=#topBranding > .ta-l", "css:finder"],
+        ["xpath=//div[@id='topBranding']/h5", "xpath:idRelative"],
+        ["xpath=//h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Werbung - LEO ohne Werbung? LEO Pur')]", "xpath:innerText"]
+      ],
+      "value": "Advertising - LEO ohne Werbung? LEO Pur"
+    }, {
+      "id": "1c31dd67-92b4-4760-87a5-309855fd7576",
+      "comment": "",
+      "command": "click",
+      "target": "id=switchLang",
+      "targets": [
+        ["id=switchLang", "id"],
+        ["linkText=Seite auf Deutsch", "linkText"],
+        ["css=#switchLang", "css:finder"],
+        ["xpath=//a[contains(text(),'Seite auf Deutsch')]", "xpath:link"],
+        ["xpath=//a[@id='switchLang']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[7]", "xpath:href"],
+        ["xpath=//ul[2]/li[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Seite auf Deutsch')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "668c5ff5-4564-4128-a443-12460abc70c3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=adv-banner",
+      "targets": [
+        ["id=adv-banner", "id"],
+        ["css=#adv-banner", "css:finder"],
+        ["xpath=//div[@id='adv-banner']", "xpath:attributes"],
+        ["xpath=//div[@id='topBranding']/div", "xpath:idRelative"],
+        ["xpath=//header/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "319d2774-2f9c-464b-98ae-93b54ab0e288",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#topBranding > .ta-l",
+      "targets": [
+        ["css=#topBranding > .ta-l", "css:finder"],
+        ["xpath=//div[@id='topBranding']/h5", "xpath:idRelative"],
+        ["xpath=//h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Werbung - LEO ohne Werbung? LEO Pur')]", "xpath:innerText"]
+      ],
+      "value": "Werbung - LEO ohne Werbung? LEO Pur"
+    }]
+  }],
+  "suites": [{
+    "id": "db359cbe-c271-4e6e-8a6c-0edcfc79ebef",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fa3f28dd-7d60-4aa4-ac12-0d9c44f643f2"]
+  }],
+  "urls": ["https://dict.leo.org/"],
+  "plugins": []
+}
